@@ -66,7 +66,7 @@ async def bad_th(ctx, llave):
         await ctx.send("No se a podido encontrar tu componente. Utiliza el comando $not_found y agrega el componente o elemento que buscaste.")
 
 
-bot.run("MTIyOTE1OTg0NzE4Mjk5NTY1Nw.G8TFq6.AJsY66pFInwpO8dflfbTCLm5x45JRvRDir0QsQ")
+#bot.run("MTIyOTE1OTg0NzE4Mjk5NTY1Nw.G8TFq6.AJsY66pFInwpO8dflfbTCLm5x45JRvRDir0QsQ")
 #https://discord.com/oauth2/authorize?client_id=1229159847182995657&permissions=8&scope=bot
 
 
