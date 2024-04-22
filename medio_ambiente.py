@@ -2,10 +2,15 @@ import discord
 from discord.ext import commands
 import shutil
 import random
+from dotenv import load_dotenv
+import os
 
 intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
+
+load_dotenv()
+DISCORD_BOT_TOKEN = os.getenv('DISCORD_BOT_TOKEN')
 
 bad = {
     "plásticos": "Los plásticos son difíciles de descomponer y contaminan los océanos y el suelo, dañando la vida marina y los ecosistemas terrestres.",
@@ -65,8 +70,9 @@ async def bad_th(ctx, llave):
     except:
         await ctx.send("No se a podido encontrar tu componente. Utiliza el comando $not_found y agrega el componente o elemento que buscaste.")
 
+bot.run(DISCORD_BOT_TOKEN)
 
-bot.run("MTIyOTE1OTg0NzE4Mjk5NTY1Nw.G8TFq6.AJsY66pFInwpO8dflfbTCLm5x45JRvRDir0QsQ")
+#bot.run("MTIyOTE1OTg0NzE4Mjk5NTY1Nw.G8TFq6.AJsY66pFInwpO8dflfbTCLm5x45JRvRDir0QsQ")
 #https://discord.com/oauth2/authorize?client_id=1229159847182995657&permissions=8&scope=bot
 
 
